@@ -1,0 +1,169 @@
+body {
+    background-color: whitesmoke;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: whitesmoke;
+    margin-right:  40px;
+    margin-left: 40px;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    background-color: #345457;
+    width: 100%;
+}
+
+
+.header-image {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.header-name {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 50px;
+    color: #daa520;
+    text-align: center;
+
+  }
+
+.sub-header {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    color: #AFEEEE;
+    text-align: center;
+}
+
+.nav-menu {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    text-align: center; 
+    color: #AFEEEE;
+    margin: 0;
+    padding: 0;
+}
+
+/*about me section end*/
+
+.box {
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    margin-top: 25px;
+    border: thick double #daa520
+}
+
+.feature-image {
+    float: left;
+    max-height: fit-content;
+    max-width: 100%;
+    margin-top: 25px;
+    margin-left: 250px;
+    border: solid #AFEEEE;
+}
+
+.feature-text {
+    float: right;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 250px;
+    padding-left: 250px;
+    padding-right: 250px;
+    border: solid #AFEEEE;
+}
+
+/*about me section end*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    background-color: #345457;
+    color: #AFEEEE;
+    text-align: center;
+
+}
+
+/* resume page */
+.resume-header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+    padding-top: 5px;
+    border-bottom:3px solid #daa520; padding-bottom:5px;
+}
+
+.resume-subheader {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 5px;
+}
+.resume-subheader-2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+
+.resume-section-1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+ul { 
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+/* sample wprks page */
+
+.sample-box {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 250px;
+    margin-right: 250px;
+    background-color: #AFEEEE;
+    border: solid #345457;
+    border-width: 2px;
+}
+/* contact page */
+
+.form-box{
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.button-icon {
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 25px;
+    margin-left: 50px;
+    
+}
+
+/* other */
+
+@media screen and (min-width: 768) {
+    header,
+    footer {
+        clear: both;
+    }
+}
