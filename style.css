@@ -25,7 +25,6 @@ header {
     width: 100%;
 }
 
-
 .header-image {
     height: 100%;
     width: 100%;
@@ -48,13 +47,18 @@ header {
 }
 
 .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    text-align: center; 
     color: #AFEEEE;
-    margin: 0;
-    padding: 0;
+    list-style-type: none; 
 }
+
+
 
 /*about me section end*/
 
@@ -88,15 +92,21 @@ header {
 /*about me section end*/
 
 footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 50px;
+    background-color:#345457;
     width: 100%;
-    background-color: #345457;
+    margin-top: 5%
+}
+
+footer p {
     color: #AFEEEE;
     text-align: center;
-
+    padding: 25px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 /* resume page */
@@ -130,7 +140,7 @@ ul {
     list-style-type: disc;
 }
 
-/* sample wprks page */
+/* sample works page */
 
 .sample-box {
     font-family: 'Times New Roman', Times, serif;
@@ -142,6 +152,11 @@ ul {
     border: solid #345457;
     border-width: 2px;
 }
+
+.sample-box a {
+    color: #345457;
+}
+
 /* contact page */
 
 .form-box{
@@ -159,11 +174,90 @@ ul {
     
 }
 
+/* form */
+
+label {
+    display: block;
+    font-size: large;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0.5em;
+}
+
+.form-input {
+    border: 2px solid #daa520; 
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.form-input :focus {
+    outline: none;
+    border: 2px solid #345457;
+    
+}
+
+[type="submit"] {
+    background: #daa520;
+    color: #345457;
+    border-color: #345457;
+    width: 100%;
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: .5em;
+    cursor: pointer;    
+}
+
+textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: left;
+}
+
+.error {
+    border-color: red;
+}
+
+.error-message {
+    color: red;
+    margin: -1em 0 1.5em
+}
+
+
+
+
 /* other */
+
 
 @media screen and (min-width: 768) {
     header,
     footer {
         clear: both;
+    }
+}
+
+@media screen and (min-width: 1065px) {
+    form {
+        width: 50%;
+        margin: 3 em auto;
     }
 }
