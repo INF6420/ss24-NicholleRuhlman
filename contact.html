@@ -23,26 +23,47 @@
     </nav>
     </header>
     <main>
-       <div class="box">
-        <h2>Contact Me</h2>
-        <p>Please fill out the form to connect with me. </p>
-       </div>
-        <div class="form-box">
-                <h3>Name</h3>
-                <input type="text" name="Name" required>
-                <h3>Email</h3>
-                <input type="text" name="Email" required>
-                <h3>Message</h3>
-                <input type="text" name="Message" maxlength="300" required>
+
+        <div class="box">
+            <h2>Contact Me</h2>
+            <p>To reach me, please out the form below.</p>
         </div>
-        <div class="button-icon">
-            <button type="submit">Submit</button>
+
+       
+        <div class="form">
+        
+        <form action="https://formspree.io/f/mkgwnygj" method="post" class="validate">
+            
+        <div>
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" class="form-input">
         </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="_replyto" class="form-input" required>
+        </div>
+        
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message"
+            class="form-input" rows="4" required></textarea>
+        </div>
+          
+        <div>    
+            <input type="submit" value="Submit">
+        </div>
+
+          </form>
+
+        </div>
+
     </main>
     <footer>
         <div>
             <p>&copy; 2024 Nicholle Ruhlman</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
