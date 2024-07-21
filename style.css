@@ -25,9 +25,16 @@ header {
     width: 100%;
 }
 
+.header-logo-name {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .header-image {
     height: 100%;
-    width: 100%;
     text-align: center;
 }
 
@@ -146,8 +153,7 @@ ul {
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-top: 25px;
-    margin-left: 250px;
-    margin-right: 250px;
+    
     background-color: #AFEEEE;
     border: solid #345457;
     border-width: 2px;
@@ -248,16 +254,22 @@ form
 /* other */
 
 
-@media screen and (min-width: 768) {
+@media screen and (min-width: 768px) {
     header,
     footer {
         clear: both;
     }
+
+    
 }
 
 @media screen and (min-width: 1065px) {
     form {
         width: 50%;
         margin: 3 em auto;
+    }
+    .sample-box {
+        margin-left: 250px;
+        margin-right: 250px;
     }
 }
