@@ -58,7 +58,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    height: 20px;
+    padding-bottom: 40px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     color: #AFEEEE;
@@ -78,7 +79,7 @@ header {
 
 .feature-image {
     float: left;
-    max-height: fit-content;
+    height: auto;
     max-width: 100%;
     margin-top: 25px;
     margin-left: 250px;
@@ -86,14 +87,19 @@ header {
 }
 
 .feature-text {
-    float: right;
+    display: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
     font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    margin-top: 25px;
+    text-align: left;
+    margin-top: 150px;
     margin-right: 250px;
     padding-left: 250px;
     padding-right: 250px;
-    border: solid #AFEEEE;
+
 }
 
 /*about me section end*/
@@ -162,6 +168,7 @@ ul {
 .sample-box a {
     color: #345457;
 }
+
 
 /* contact page */
 
@@ -258,9 +265,7 @@ form
     header,
     footer {
         clear: both;
-    }
-
-    
+    }   
 }
 
 @media screen and (min-width: 1065px) {
@@ -273,3 +278,33 @@ form
         margin-right: 250px;
     }
 }
+
+@media screen and (max-width: 866px) {
+    .nav-menu {
+        float: none;
+        display: inline-block;
+        text-align: center;
+    }
+    iframe{
+        aspect-ratio: 16 / 9;
+        height: 100%;
+        width: 100%;   
+    }
+.feature-image {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+    .feature-text {
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding: 10%;
+    }
+ }
+
+
+
